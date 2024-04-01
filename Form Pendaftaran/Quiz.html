@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pendaftaran</h1>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="tanggal_lahir"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <select name="jenis_kelamin">
+                            <option value="laki-laki">Laki-laki</option>
+                            <option value="perempuan">Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jurusan</td>
+                    <td>:</td>
+                    <td>
+                        <select name="jurusan">
+                            <option value="IMT">IMT</option>
+                            <option value="VCD">VCD</option>
+                            <option value="MAN">MAN</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" id="hobi1" name="hobi[]" value="Gaming">
+                        <label for="hobi1">Gaming</label>
+                        
+                        <input type="checkbox" id="hobi2" name="hobi[]" value="Travelling">
+                        <label for="hobi2">Travelling</label>
+                       
+                        <input type="checkbox" id="hobi3" name="hobi[]" value="Rebahan">
+                        <label for="hobi3">Rebahan</label>
+                      
+                        <input type="checkbox" id="hobi4" name="hobi[]" value="Dengar Musik">
+                        <label for="hobi4">Dengar Musik</label>
+                      
+                        <input type="checkbox" id="hobi5" name="hobi[]" value="Adventure">
+                        <label for="hobi5">Adventure</label>
+                     
+                        <input type="checkbox" id="hobi6" name="hobi[]" value="Lainnya">
+                        <label for="hobi6">Lainnya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Semester</td>
+                    <td>:</td>
+                    <td><input type="number" name="semester" min="1" max="8"></td>
+                </tr>
+            </table>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
